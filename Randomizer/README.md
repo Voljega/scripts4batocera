@@ -23,7 +23,7 @@ If some game didn't launch you can look at the log */userdata/randomlog.csv* to 
 ### Installation
 
 * First copy the script in the */userdata/* folder
-* Edit the */usr/share/emulationstation/es_systems.cfg* file to add the new random system (don't forget first to remount with `mount -o remount,rw /` and then to save modification with `batocera-save-overlay`)
+* Edit the */usr/share/emulationstation/es_systems.cfg* file to add the new random system (don't forget first to remount with `mount -o remount,rw /`)
 Alternativaly you can modify the `/userdata/system/configs/emulationstation/es_systems.cfg` file if you have a copy of base `ex_systems.cfg` there
 ```xml
 <system>
@@ -39,9 +39,8 @@ Alternativaly you can modify the `/userdata/system/configs/emulationstation/es_s
 ```
 * Kill EmulationStation with `/etc/init.d/S31emulationstation stop` (wait for it to die)
 * Copy the `random` folder into  `/userdata/roms` directory
-
-deactivated for now :
-~~* Copy `theme/random` directory in `/recalbox/share_init/system/.emulationstation/themes/recalbox-next` (base system theme)~~
+* Copy `theme/random` directory in `/usr/share/emulationstation/themes/es-theme-carbon` (base system theme) or in the folder of the custom theme you are using
+* Save your modifications with `batocera-save-overlay`
 
 ## Initialisation
 
